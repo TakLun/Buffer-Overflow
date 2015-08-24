@@ -1,0 +1,4 @@
+Ernie Lee
+CS458 Project 3
+
+The attak-string program wil generate a string used to cause a buffer overflow in a vulnerable program and have it to call a function. Based on the buffer size in the porgram, the attack program will generate enough characters to fill the buffer and the saved frame pointer. The program then will add the address of the target function to the end of the attack string, overriding the return address of the current function. When the vulnerable program runs with the attack string as nut, it will call the target function at the return. The address will be generated based on the endianness of the machine. 
